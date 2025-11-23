@@ -1,3 +1,24 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+
+.katex {
+    font-size: 1.00em !important;
+    color: var(--dark);
+  }
+
+  .katex-inline {
+    vertical-align: baseline !important;
+  }
+  
+  .katex-display {
+    margin: 1.5em 0 !important;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  
+  .katex-display > .katex > .katex-html > .tag {
+    font-family: var(--bodyFont);
+    font-size: 0.9em;
+    color: var(--gray);
+  }
